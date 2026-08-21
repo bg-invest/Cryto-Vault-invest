@@ -8,7 +8,7 @@ if (form) {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === "Sefton123" && password === "SeftonBooth") {
+    if (username === "summerbegone97@gmail.com" && password === "Anna097") {
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("username", username);
 
@@ -147,6 +147,9 @@ async function refreshData() {
   await getBTCChartData();
 }
 
-setInterval(getBTCPrice, 5000);
+// setInterval(getBTCPrice, 5000);
+// setInterval(getBTCChartData, 5 * 60 * 1000);
+// refreshData();
+setInterval(getBTCPrice, 5 * 60 * 1000);
 setInterval(getBTCChartData, 5 * 60 * 1000);
 refreshData();
