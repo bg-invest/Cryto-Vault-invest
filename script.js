@@ -8,7 +8,7 @@ if (form) {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === "summerbegone97@gmail.com" && password === "Anna097") {
+    if (username === "Angeleyes1983" && password === "Baxter1983") {
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("username", username);
 
