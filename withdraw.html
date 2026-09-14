@@ -40,10 +40,10 @@
       <!-- WITHDRAW FORM -->
       <form class="withdraw-form" style="display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin-top: 30px;">
         <label for="amount">Amount to Withdraw:</label>
-        <input type="number" id="amount" name="amount" placeholder="$100.00">
+        <input type="number" id="amount" name="amount" placeholder="$100.00" required>
 
         <label for="address">Send to:</label>
-        <input type="text" id="address" name="address" placeholder="Enter your wallet address">
+        <input type="text" id="address" name="address" placeholder="Enter your wallet address" required>
         
         <button type="button" id="wallet-withdraw-btn">Initiate withdraw</button>
         <div id="wallet-loading" class="loading-indicator" aria-live="polite">Processing withdrawal…</div>
@@ -52,19 +52,19 @@
       <h2 style="margin-top: 50px;">Withdraw Funds To Bank</h2>
       <form class="withdraw-form" style="display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin-top: 30px;">
         <label for="bank-name">Bank name:</label>
-        <input type="text" id="bank-name" name="bank-name" placeholder="Enter bank name">
+        <input type="text" id="bank-name" name="bank-name" placeholder="Enter bank name" required>
 
         <label for="account-number">Account number:</label>
-        <input type="text" id="account-number" name="account-number" placeholder="Enter account number">
+        <input type="text" id="account-number" name="account-number" placeholder="Enter account number" required>
 
         <label for="routing-number">Routing number:</label>
-        <input type="text" id="routing-number" name="routing-number" placeholder="Enter routing number">
+        <input type="text" id="routing-number" name="routing-number" placeholder="Enter routing number" >
 
         <label for="account-holder">Account holder name:</label>
-        <input type="text" id="account-holder" name="account-holder" placeholder="Enter account holder name">
+        <input type="text" id="account-holder" name="account-holder" placeholder="Enter account holder name" required>
 
         <label for="bank-amount">Amount to Withdraw:</label>
-        <input type="number" id="bank-amount" name="bank-amount" placeholder="$100.00">
+        <input type="number" id="bank-amount" name="bank-amount" placeholder="$100.00" required>
 
         <button type="button" id="bank-withdraw-btn">Initiate bank withdraw</button>
         <div id="bank-loading" class="loading-indicator" aria-live="polite">Processing withdrawal…</div>
